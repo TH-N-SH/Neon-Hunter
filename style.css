@@ -1,0 +1,80 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at center, #111, #000);
+  font-family: 'Segoe UI', sans-serif;
+  color: #0ff;
+  overflow: hidden;
+}
+
+#overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 64px;
+  letter-spacing: 4px;
+  text-shadow: 0 0 25px #0ff;
+}
+
+.panel {
+  background: url("assets/ui/panel.svg") center / cover no-repeat;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(0,255,255,0.6);
+}
+
+
+button {
+  background: url("assets/ui/button.svg") center / cover no-repeat;
+  border: none;
+  height: 48px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+
+#arena {
+  width: 100vw;
+  height: 100vh;
+  background:
+    radial-gradient(circle at center, rgba(0,255,255,0.1), transparent),
+    url("assets/textures/background.svg") center / cover no-repeat;
+}
+
+#orb {
+  width: 72px;
+  height: 72px;
+  background: url("assets/textures/orb.svg") center / cover no-repeat;
+  position: absolute;
+  cursor: pointer;
+
+  filter: drop-shadow(0 0 25px cyan);
+  transition: transform 0.12s ease, filter 0.12s;
+}
+
+#orb:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 40px cyan);
+}
+
+#hud {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  gap: 30px;
+}
