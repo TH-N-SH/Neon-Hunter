@@ -18,4 +18,4 @@ Neon Hunter, refleks ve odaklanma üzerine kurulu, neon temalı bir tarayıcı o
 index.html dosyasını tarayıcıda açmanız yeterlidir.
 
 ## 🎮 Canlı Demo
-https://th-n-sh.github.io/neon-avcisi
+https://th-n-sh.github.io/Neon-Hunter
